@@ -15,11 +15,14 @@
 <body>
     <div style="text-align:center;">
         <ins class="adsbygoogle"
-             style="display:inline-block;width:320px;height:50px"
+             style="display:block; width:100%; max-width:320px; height:auto;"
              data-ad-client="ca-app-pub-3880166033513903" // Your AdMob client ID
              data-ad-slot="6549546844"></ins> // Your ad slot ID
         <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
+            (adsbygoogle = window.adsbygoogle || []).push({})
+            .catch(function(error) {
+                console.error("AdMob ad loading error:", error);
+            });
         </script>
     </div>
 </body>
